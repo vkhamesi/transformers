@@ -1,0 +1,7 @@
+# Implementing Transformers from scratch in PyTorch
+
+This repository consists of a *from scratch* implementation the Transformer architecture in PyTorch, as originally introduced by [Vaswani et al. (2017)](https://arxiv.org/pdf/1706.03762) for translation tasks. Transformers have since been widely used in various sequence processing tasks, from language modelling ([Devlin et al., 2019](https://arxiv.org/pdf/1810.04805)) to time series forecasting ([Wu et al., 2022](https://arxiv.org/pdf/2106.13008)) via image processing ([Dosovitskiy et al., 2022](https://arxiv.org/pdf/2010.11929)).
+
+This code aims to reproduce the core components of a Transformer model (e.g., positional embedding, attention mechanisms, residual connection, layer normalisation) in PyTorch based on the 2022 paper [Formal Algorithms for Transformers](https://arxiv.org/pdf/2207.09238). Each core component is implemented independently and tested by calculating the shapes of processed objects. Final architectures (encoder, decoder, encoder-decoder) are also implemented by combining all building blocks.
+
+We test our implementation by successfully overfitting a small artificially generated batch of data using a tiny Transformer encoder model, as shown in the [`experiment.ipynb`](./experiment.ipynb) Notebook.
